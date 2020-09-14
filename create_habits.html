@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="page_create_habits.css">
+      <link rel="stylesheet" href="header.css">
+      <script src="https://kit.fontawesome.com/5690ac6389.js" crossorigin="anonymous"></script>
+
+      <title>Create Habits</title>
+  </head>
+
+  <body id="page_create_habits">
+
+    <div id="container">
+
+      <header class="page-header">
+        <div class="top-bar-container">
+          <a href="#">Cancel</a>
+          <a href="#">Add Habit</a>
+          <a href="#">Done</a>
+        </div> 
+        <div class="header-content">
+          <strong>How amazing that you want to have good habits</strong>
+          <p>The first step is to fill out this form of habits</p>
+        </div>
+      </header>
+
+      <main>        
+        <form id="create-class">
+          <fieldset>
+            <legend>Add New Habit</legend>    
+            <div class="input-block">         
+              <input type="checkbox" name="period" value="day">
+              <label for="period">Day</label>
+              <input type="checkbox" name="period" value="week">
+              <label for="period">Week</label>
+              <input type="checkbox" name="period" value="monthly">
+              <label for="period">Monthly</label>
+            </div>
+            <div class="input-block">
+              <label for="habit_name">Habit Name</label>
+              <input type="text" name="habit_name">
+            </div>
+            <div class="input-block">
+              <label for="habit_description">Habit Description</label>
+              <textarea name="habit_description" required></textarea>                  
+            </div>
+            <div class="input-block">
+              <label for="habit_description">Schedule</label>
+              <input type="time" name="habit_Schedule">
+            </div>                    
+            
+            <div class="input-block">
+                <label for="habit_color">Habit Color</label>
+                <input type="color" name="habit_color">
+            </div>                   
+          </fildset>
+        </form>
+        <footer>
+          <p>
+              <img src="/images/warning.svg" alt="Aviso importante">
+              Importante!<br>Preencha todos os campos
+          </p>
+          <button type="submit" form="create-class">Salvar cadastro</button>
+        </footer>
+      </main>
+    </div>
+  </body>
+    
+</html>
