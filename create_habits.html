@@ -35,19 +35,25 @@
         <form id="create-class">
           <fieldset>
             <legend>Add New Habit</legend>    
-            <div class="input-block">         
-              <input type="checkbox" name="period" value="day">
-              <label for="period">Day</label>
-              <input type="checkbox" name="period" value="week">
-              <label for="period">Week</label>
-              <input type="checkbox" name="period" value="monthly">
-              <label for="period">Monthly</label>
+            <div class="checkbox-block">      
+              <div class="period">
+                <input type="checkbox" name="period" value="day">
+                <label for="period">Day</label>
+              </div>   
+              <div class="period">
+                <input type="checkbox" name="period" value="week">
+                <label for="period">Week</label>
+              </div>
+              <div class="period">
+                <input type="checkbox" name="period" value="monthly">
+                <label for="period">Monthly</label>
+              </div>              
             </div>
             <div class="input-block">
               <label for="habit_name">Habit Name</label>
               <input type="text" name="habit_name">
             </div>
-            <div class="input-block">
+            <div class="textarea-block">
               <label for="habit_description">Habit Description</label>
               <textarea name="habit_description" required></textarea>                  
             </div>
@@ -56,15 +62,26 @@
               <input type="time" name="habit_Schedule">
             </div>                    
             
-            <div class="input-block">
-                <label for="habit_color">Habit Color</label>
-                <input type="color" name="habit_color">
-            </div>                   
+            <div>      
+              <div class="color">
+                <input type="color" id="head" name="head" value="red">
+                <label for="period">Red</label>
+                <input type="checkbox" name="period" value="red">
+              </div>   
+              <div class="period">
+                <input type="checkbox" name="period" value="week">
+                <label for="period">Week</label>
+              </div>
+              <div class="period">
+                <input type="checkbox" name="period" value="monthly">
+                <label for="period">Monthly</label>
+              </div>              
+            </div>                
           </fildset>
         </form>
         <footer>
           <p>
-              <img src="/images/warning.svg" alt="Aviso importante">
+            <img src="assets/images/warning.svg" alt="Aviso importante">
               Importante!<br>Preencha todos os campos
           </p>
           <button type="submit" form="create-class">Salvar cadastro</button>
