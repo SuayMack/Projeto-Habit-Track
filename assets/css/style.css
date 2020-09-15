@@ -48,6 +48,42 @@ textarea {
     color: var(--color-text-base);
 }
 
+label.color-red {
+    width: 30%;
+    border-radius: 1rem;
+    background-color: red;
+    border: none;
+    padding: 1rem;
+}
+
+button.color-red:hover {
+    border-radius: 1rem;
+    padding: .8rem;
+    background-color: red;
+    border: none;
+}
+
+button.color-blue {
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: blue;
+    border: none;
+}
+
+button.color-violet {
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: blueviolet;
+    border: none;
+}
+
+button.color-green {
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: green;
+    border: none;
+}
+
 #container {
     width: 90vw;
     max-width: 700px;
