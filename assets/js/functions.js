@@ -1,3 +1,5 @@
-function colorRed() {
-  document.getElementById("color_red").innerHTML = "Red";
+function myFunction() {
+  var color = document.getElementById("color").innerHTML = this.getElementById();
+  return color
+
 }

@@ -60,19 +60,16 @@
             <div class="input-block">
               <label for="habit_description">Schedule</label>
               <input type="time" name="habit_Schedule">
-            </div>                    
-            
-            <div>      
-              <div class="colors">
-                <label class="color-red" for="color-red"></label>
-                <input  type="radio" name="red" value="red"> </button>
-                <button class="color-blue"></button>
-                <button class="color-violet"></button>
-                <button class="color-green"></button>
-              </div>   
-            </div>                
+            </div>     
           </fildset>
         </form>
+        <div class="colors">
+          <button class="color" id="red" onclick="myFunction()"></button>
+          <button class="color" id="blue" onclick="myFunction()"></button>
+          <button class="color" id="violet" onclick="myFunction()"></button>
+          <button class="color" id="green" onclick="myFunction()"></button>
+          <p id="demo"></p>             
+        </div>           
         <footer>
           <p>
             <img src="assets/images/warning.svg" alt="Aviso importante">
@@ -82,7 +79,10 @@
         </footer>
       </main>
     </div>
+      <script src="assets/js/functions.js"></script>
+
   </body>
-  <script src="assets/js/functions.js"></script>
+
+  
     
 </html>
