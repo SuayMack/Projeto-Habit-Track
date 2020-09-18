@@ -34,7 +34,15 @@
       <main>        
         <form id="create-class">
           <fieldset>
-            <legend>Add New Habit</legend>    
+            <legend>Add New Habit</legend> 
+            <div id="buttons">
+
+              <span class="red" id="red" onclick="myFunction()"></span>
+              <span class="blue" id="blue" onclick="myFunction()"></span>
+              <span class="violet" id="blueviolet" onclick="myFunction()"></span>
+              <span class="green" id="green" onclick="myFunction()"></span>
+            <p id="select_color">          
+            </div>     
             <div class="checkbox-block">      
               <div class="period">
                 <input type="checkbox" name="period" value="day">
@@ -49,9 +57,10 @@
                 <label for="period">Monthly</label>
               </div>              
             </div>
+             
             <div class="input-block">
               <label for="habit_name">Habit Name</label>
-              <input type="text" name="habit_name">
+              <input type="text" name="habit_name" required>
             </div>
             <div class="textarea-block">
               <label for="habit_description">Habit Description</label>
@@ -63,13 +72,7 @@
             </div>     
           </fildset>
         </form>
-        <div id="buttons">
-          <button class="red" id="red" onclick="myFunction()"></button>
-          <button class="blue" id="blue" onclick="myFunction()"></button>
-          <button class="violet" id="violet" onclick="myFunction()"></button>
-          <button class="green" id="green" onclick="myFunction()"></button> 
-                   
-        </div>           
+                
         <footer>
           <p>
             <img src="assets/images/warning.svg" alt="Aviso importante">

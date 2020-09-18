@@ -48,32 +48,50 @@ textarea {
     color: var(--color-text-base);
 }
 
-button#red {
-    border-radius: 1rem;
-    padding: .5rem;
+div#buttons {
+    display: flex;
+    justify-content: end;
+}
+
+element.style {
+    cursor: pointer;
+}
+
+p#select_color {
+    padding: 2rem;
+}
+
+span {
+    margin: 2rem;    
+    font-weight: "900";
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    
+}
+
+span#red {
+    
     background-color: red;
-    border: none;
+    
 }
 
-button#blue {
-    border-radius: 1rem;
-    padding: .5rem;
+span#blue {
+    
     background-color: blue;
-    border: none;
+    
 }
 
-button#violet {
-    border-radius: 1rem;
-    padding: .5rem;
+span#blueviolet {
+    
     background-color: blueviolet;
-    border: none;
+    
 }
 
-button#green {
-    border-radius: 1rem;
-    padding: .5rem;
+span#green {
+    
     background-color: green;
-    border: none;
+   
 }
 
 #container {
@@ -83,6 +101,6 @@ button#green {
 
 @media (min-width:700px) {
     :root {
-        font-size: 62.5%; /*todo 1rem vai ser relativo a 10px*/
+        font-size: 62.5%; /*todo 2rem vai ser relativo a 10px*/
     }
 }
